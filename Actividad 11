@@ -2,4 +2,466 @@
 #216932337
 #Aprendiendo a usar jupyter con la guia que se nos otorgo por el profesor
 #20/02023
+http://localhost:8888/notebooks/act11cod-Copy1.ipynb
+print ("hello word")
+print ("hello word")
+hello word
+print ("hello word")
+hello word
+")
+print ("hello word")
+hello word
+print ("hello word")
+hello word
+type (1)
+int
+type(2.3)
+float
+1 + 2
+3
+3 ** 2
+9
+type (True)
+bool
+type ("hello word")
+str
+#cambiar minuscula a mayuscula
+print ("Hello World".upper())
+print ("Hello World".lower())
+print ("hello world".title())
+​
+#contar letras
+print ("hello world".count('l'))
+#remplazar letras de cadenas de texto
+print ("hello world".replace('o','u'))
+​
+HELLO WORLD
+hello world
+Hello World
+3
+hellu wurld
+message_1 = "Estoy aprendiendo phyton"
+message_1
+'Estoy aprendiendo phyton'
+message_2 = "y es divertido"
+message_2
+'y es divertido'
+message_1 + message_2
+'Estoy aprendiendo phytony es divertido'
+message_1 +"  "+ message_2
+'Estoy aprendiendo phyton  y es divertido'
+message = f'{message_1}{message_2}'
+message
+'Estoy aprendiendo phytony es divertido'
+countries = ['Estados unidos', 'india','china','brazil']
+countries
+['Estados unidos', 'india', 'china', 'brazil']
+countries [0]
+'Estados unidos'
+countries [1]
+'india'
+countries [3]
+'brazil'
+countries [-1]
+'brazil'
+countries [-4]
+'Estados unidos'
+countries
+['Estados unidos', 'india', 'china', 'brazil']
+countries [0:3]
+['Estados unidos', 'india', 'china']
+countries [1:]
+['india', 'china', 'brazil']
+countries [:2]
+['Estados unidos', 'india']
+countries 
+['Estados unidos', 'india', 'china', 'brazil']
+countries.append('canada')
+countries
+['Estados unidos', 'india', 'china', 'brazil', 'canada']
+countries.insert(0,'Argentina')
+countries
+['Argentina', 'Estados unidos', 'india', 'china', 'brazil', 'canada']
+countries_2 = ['UK','Alemania','Australia']
+countries + countries_2
+['Argentina',
+ 'Estados unidos',
+ 'india',
+ 'china',
+ 'brazil',
+ 'canada',
+ 'UK',
+ 'Alemania',
+ 'Australia']
+countries.remove('Canada')
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+~\AppData\Local\Temp\ipykernel_25472\89929788.py in <module>
+----> 1 countries.remove('Canada')
 
+ValueError: list.remove(x): x not in list
+
+countries.remove('canada')
+countries
+['Argentina', 'Estados unidos', 'india', 'china', 'brazil']
+countries.pop(0)
+'Argentina'
+countries
+['Estados unidos', 'india', 'china', 'brazil']
+del countries [0]
+countries
+['india', 'china', 'brazil']
+numbers = [4,3,10,7,1,2]
+numbers
+[4, 3, 10, 7, 1, 2]
+numbers.sort()
+numbers
+[1, 2, 3, 4, 7, 10]
+numbers.sort(reverse=true)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+~\AppData\Local\Temp\ipykernel_25472\3351943313.py in <module>
+----> 1 numbers.sort(reverse=true)
+
+NameError: name 'true' is not defined
+
+numbers.sort(reverse=True)
+numbers
+[10, 7, 4, 3, 2, 1]
+numbers[0] = 1000
+numbers
+[1000, 7, 4, 3, 2, 1]
+countries.append('Argentina')
+countries
+['india', 'china', 'brazil', 'Argentina']
+nueva_lista_3 = countries
+nueva_lista_3
+['india', 'china', 'brazil', 'Argentina']
+nueva_lista_3 = countries.copy()
+nueva_lista = countries.copy()
+nueva_lista
+['india', 'china', 'brazil', 'Argentina']
+nueva_lista_2 = countries[:]
+nueva_lista_2
+['india', 'china', 'brazil', 'Argentina']
+mi_diccionario = {'key1':'value1','key2':'value2'}
+my_data = {'nombre':'frank','edad':26}
+my_data
+{'nombre': 'frank', 'edad': 26}
+my_data ['nombre']
+'frank'
+my_data.keys()
+dict_keys(['nombre', 'edad'])
+my_data.values()
+dict_values(['frank', 26])
+my_data.items()
+dict_items([('nombre', 'frank'), ('edad', 26)])
+my_data = {'nombre', 'frank', 'edad':26}
+  File "C:\Users\Kaori Momose\AppData\Local\Temp\ipykernel_25472\799016985.py", line 1
+    my_data = {'nombre', 'frank', 'edad':26}
+                                        ^
+SyntaxError: invalid syntax
+
+
+my_data = {'nombre': 'frank', 'edad':26}
+my_data['estatura']= 1.7
+my_data
+{'nombre': 'frank', 'edad': 26, 'estatura': 1.7}
+my_data.update({'estatura':1.9, 'lenguajes':['ingles','español']})
+my_data
+{'nombre': 'frank',
+ 'edad': 26,
+ 'estatura': 1.9,
+ 'lenguajes': ['ingles', 'español']}
+nuevo_diccionario = my_data.copy()
+nuevo_diccionario
+{'nombre': 'frank',
+ 'edad': 26,
+ 'estatura': 1.9,
+ 'lenguajes': ['ingles', 'español']}
+my_data
+{'nombre': 'frank',
+ 'edad': 26,
+ 'estatura': 1.9,
+ 'lenguajes': ['ingles', 'español']}
+my_data.pop('estatura')
+1.9
+my_data
+{'nombre': 'frank', 'edad': 26, 'lenguajes': ['ingles', 'español']}
+my_data.clear()
+my_data
+{}
+edad=24
+if edad>18;
+print ("eres mayor de edad")
+elif edad>=13;
+print ("eres un  adoloscente")
+else:
+    print ("eres un niño")
+  File "C:\Users\Kaori Momose\AppData\Local\Temp\ipykernel_25472\3491114045.py", line 2
+    if edad>18;
+              ^
+SyntaxError: invalid syntax
+
+
+edad=24
+if edad>=18;
+print ("eres mayor de edad")
+elif edad>=13;
+print ("eres un  adoloscente")
+else:
+    print ("eres un niño")
+  File "C:\Users\Kaori Momose\AppData\Local\Temp\ipykernel_25472\2887329836.py", line 2
+    if edad>=18;
+               ^
+SyntaxError: invalid syntax
+
+
+edad=24
+if edad>18:
+print ("eres mayor de edad")
+elif edad>=13:
+print ("eres un  adoloscente")
+else:
+    print ("eres un niño")
+  File "C:\Users\Kaori Momose\AppData\Local\Temp\ipykernel_25472\888783573.py", line 3
+    print ("eres mayor de edad")
+    ^
+IndentationError: expected an indented block
+
+
+edad = 24
+if edad>18:
+print ("eres mayor de edad")
+elif edad>=13:
+print ("eres un  adoloscente")
+else:
+    print ("eres un niño")
+  File "C:\Users\Kaori Momose\AppData\Local\Temp\ipykernel_25472\2012797129.py", line 3
+    print ("eres mayor de edad")
+    ^
+IndentationError: expected an indented block
+
+
+edad = 24
+if edad>18:
+    print("eres mayor de edad")
+elif edad>=13:
+    print("eres un  adoloscente")
+else:
+    print("eres un niño")
+eres mayor de edad
+countries = 
+countries = ['estados unidos', 'india', 'china', 'brazil']
+if "colombia" in countries:
+    print ("pais  esta en la lista")
+else :
+    print ("pais no esta en la lista")
+pais no esta en la lista
+for pais in countries:
+    print (pais)
+estados unidos
+india
+china
+brazil
+for pais in countries:
+    if pais == "estados unidos":
+        print (pais)
+estados unidos
+for numero, pais in enumerate (countries):
+    print (numero)
+    print (pais)
+0
+estados unidos
+1
+india
+2
+china
+3
+brazil
+my_data{'nombre':'frank', 'edad':26}
+  File "C:\Users\Kaori Momose\AppData\Local\Temp\ipykernel_25472\2292790300.py", line 1
+    my_data{'nombre':'frank', 'edad':26}
+           ^
+SyntaxError: invalid syntax
+
+
+my_data = {'nombre':'frank', 'edad':26}
+my_data
+{'nombre': 'frank', 'edad': 26}
+my_data.items()
+dict_items([('nombre', 'frank'), ('edad', 26)])
+for key, value in my_data.items():
+    print (key)
+    print (value)
+nombre
+frank
+edad
+26
+countries
+['estados unidos', 'india', 'china', 'brazil']
+len(countries)
+4
+max[16,83,32,1,10]
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+~\AppData\Local\Temp\ipykernel_25472\1865114191.py in <module>
+----> 1 max[16,83,32,1,10]
+
+TypeError: 'builtin_function_or_method' object is not subscriptable
+
+max([16,83,32,1,10])
+83
+min ([16,83,32,1,10])
+1
+type (countries)
+list
+type (my_data)
+dict
+round (2.333,2)
+2.33
+for i in range (1,10,2):
+    print (i)
+1
+3
+5
+7
+9
+def sumar_numeros (a,b):
+    suma_final = a+b
+    return suma_final
+sumar_numeros(10,5)
+15
+import os 
+os.getcwd()
+'C:\\Users\\Kaori Momose'
+os.listdir()
+['.android',
+ '.conda',
+ '.condarc',
+ '.continuum',
+ '.dotnet',
+ '.gradle',
+ '.ipynb_checkpoints',
+ '.ipython',
+ '.jupyter',
+ '.matplotlib',
+ '.ms-ad',
+ '.nbi',
+ '.nuget',
+ '.spyder-py3',
+ '.templateengine',
+ '.thumbnails',
+ '.VirtualBox',
+ '3D Objects',
+ 'act10',
+ 'anaconda3',
+ 'AndroidStudioProjects',
+ 'AppData',
+ 'Configuración local',
+ 'Contacts',
+ 'Cookies',
+ 'Datos de programa',
+ 'Desktop',
+ 'Documents',
+ 'Downloads',
+ 'Entorno de red',
+ 'Favorites',
+ 'Impresoras',
+ 'IntelGraphicsProfiles',
+ 'Jedi',
+ 'Links',
+ 'Menú Inicio',
+ 'Mis documentos',
+ 'Music',
+ 'NTUSER.DAT',
+ 'ntuser.dat.LOG1',
+ 'ntuser.dat.LOG2',
+ 'NTUSER.DAT{340d2f1a-ef07-11ea-b158-782b467c8e8a}.TxR.0.regtrans-ms',
+ 'NTUSER.DAT{340d2f1a-ef07-11ea-b158-782b467c8e8a}.TxR.1.regtrans-ms',
+ 'NTUSER.DAT{340d2f1a-ef07-11ea-b158-782b467c8e8a}.TxR.2.regtrans-ms',
+ 'NTUSER.DAT{340d2f1a-ef07-11ea-b158-782b467c8e8a}.TxR.blf',
+ 'NTUSER.DAT{340d2f1b-ef07-11ea-b158-782b467c8e8a}.TM.blf',
+ 'NTUSER.DAT{340d2f1b-ef07-11ea-b158-782b467c8e8a}.TMContainer00000000000000000001.regtrans-ms',
+ 'NTUSER.DAT{340d2f1b-ef07-11ea-b158-782b467c8e8a}.TMContainer00000000000000000002.regtrans-ms',
+ 'ntuser.ini',
+ 'OneDrive',
+ 'Pictures',
+ 'Plantillas',
+ 'Reciente',
+ 'Saved Games',
+ 'Searches',
+ 'SendTo',
+ 'source',
+ 'Untitled.ipynb',
+ 'untitled.txt',
+ 'Untitled1.ipynb',
+ 'Untitled2.ipynb',
+ 'Videos',
+ 'VirtualBox VMs']
+os.makedirs("Nueva Carpeta")
+os.listdir()
+['.android',
+ '.conda',
+ '.condarc',
+ '.continuum',
+ '.dotnet',
+ '.gradle',
+ '.ipynb_checkpoints',
+ '.ipython',
+ '.jupyter',
+ '.matplotlib',
+ '.ms-ad',
+ '.nbi',
+ '.nuget',
+ '.spyder-py3',
+ '.templateengine',
+ '.thumbnails',
+ '.VirtualBox',
+ '3D Objects',
+ 'act10',
+ 'anaconda3',
+ 'AndroidStudioProjects',
+ 'AppData',
+ 'Configuración local',
+ 'Contacts',
+ 'Cookies',
+ 'Datos de programa',
+ 'Desktop',
+ 'Documents',
+ 'Downloads',
+ 'Entorno de red',
+ 'Favorites',
+ 'Impresoras',
+ 'IntelGraphicsProfiles',
+ 'Jedi',
+ 'Links',
+ 'Menú Inicio',
+ 'Mis documentos',
+ 'Music',
+ 'NTUSER.DAT',
+ 'ntuser.dat.LOG1',
+ 'ntuser.dat.LOG2',
+ 'NTUSER.DAT{340d2f1a-ef07-11ea-b158-782b467c8e8a}.TxR.0.regtrans-ms',
+ 'NTUSER.DAT{340d2f1a-ef07-11ea-b158-782b467c8e8a}.TxR.1.regtrans-ms',
+ 'NTUSER.DAT{340d2f1a-ef07-11ea-b158-782b467c8e8a}.TxR.2.regtrans-ms',
+ 'NTUSER.DAT{340d2f1a-ef07-11ea-b158-782b467c8e8a}.TxR.blf',
+ 'NTUSER.DAT{340d2f1b-ef07-11ea-b158-782b467c8e8a}.TM.blf',
+ 'NTUSER.DAT{340d2f1b-ef07-11ea-b158-782b467c8e8a}.TMContainer00000000000000000001.regtrans-ms',
+ 'NTUSER.DAT{340d2f1b-ef07-11ea-b158-782b467c8e8a}.TMContainer00000000000000000002.regtrans-ms',
+ 'ntuser.ini',
+ 'Nueva Carpeta',
+ 'OneDrive',
+ 'Pictures',
+ 'Plantillas',
+ 'Reciente',
+ 'Saved Games',
+ 'Searches',
+ 'SendTo',
+ 'source',
+ 'Untitled.ipynb',
+ 'untitled.txt',
+ 'Untitled1.ipynb',
+ 'Untitled2.ipynb',
+ 'Videos',
+ 'VirtualBox VMs']
